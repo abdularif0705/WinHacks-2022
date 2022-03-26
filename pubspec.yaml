@@ -30,10 +30,19 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+
+  #Configure the latest google Maps dependency for ios and android.
+  google_maps_flutter: ^2.1.3
+
+  #This lets use send directions to the google directions API, for route points.
+  dio: ^4.0.0
+
+  #This lets us decode the polyline points into longitude and latitude points necessary to display the routes.
+  flutter_polyline_points: ^0.2.6
+
 
 dev_dependencies:
   flutter_test:
