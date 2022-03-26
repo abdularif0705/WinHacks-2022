@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MapScreen(),
     );
   }
 }
@@ -110,6 +112,27 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+
+class MapScreen extends StatefulWidget{
+  @override
+  _MapScreenState createState() => _MapScreenState();
+}
+
+
+class _MapScreenState extends State<MapScreen> {
+
+  static const _initialCameraPosition = CameraPosition(target: LatLng(42.3027, -82.9887),
+  zoom: 11.5);
+
+  @override
+  Widget build(BuildContext content){
+    return const Scaffold(
+      body: GoogleMap(
+          initialCameraPosition: _initialCameraPosition),
     );
   }
 }
