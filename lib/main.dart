@@ -202,10 +202,10 @@ const String _mapStyle = '''[
                 "visibility": "simplified"
             },
             {
-                "saturation": "41"
+                "saturation": "100"
             },
             {
-                "lightness": "-33"
+                "lightness": "-72"
             }
         ]
     },

@@ -41,7 +41,7 @@ dependencies:
   dio: ^4.0.0
 
   #This lets us decode the polyline points into longitude and latitude points necessary to display the routes.
-  flutter_polyline_points: ^0.2.6
+  flutter_polyline_points: ^1.0.0
 
   background_location: ^0.8.1
 
