@@ -9,7 +9,7 @@ Using machine learning we can also predict whether a location is suitable to hav
 
 ## How we built it
 - The app is built using Flutter 
-- Data Analysis and prediction has been done using Python using libraries such as geopandas, sklearn etc
+- Data Analysis and prediction has been done using Python with libraries such as geopandas, sklearn etc
 
 ## Challenges we ran into
 - Integrating google maps with custom pointers in Flutter
