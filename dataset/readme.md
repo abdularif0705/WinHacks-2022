@@ -6,4 +6,4 @@ https://developers.arcgis.com/python/sample-notebooks/openstreetmap-exploration/
 
 https://extract.bbbike.org/
 
-The tutorial can be found on [!youtube](https://www.youtube.com/watch?v=nJaBkInC-q0)
+The tutorial can be found on [Youtube](https://www.youtube.com/watch?v=nJaBkInC-q0)
