@@ -182,7 +182,6 @@ class _MapScreenState extends State<MapScreen> {
 }
 
 const String _mapStyle = '''[
-[
     {
         "featureType": "all",
         "elementType": "labels",
@@ -387,5 +386,4 @@ const String _mapStyle = '''[
             }
         ]
     }
-]
-''';
+]''';
