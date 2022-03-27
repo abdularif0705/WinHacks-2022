@@ -26,5 +26,8 @@ Using machine learning we can also predict whether a location is suitable to hav
 ## What's next for PowerFX
 - Complete our prediction model with real charging station data and integrate the model into our app
 
-To know more about the challenge visit
+## References
+- To know more about the challenge visit [The challenge pdf](https://github.com/abdularif0705/WinHacks-2022/blob/main/Optimizing_Vehicle_Charging_Stations_Challenge.pdf)
+- Or take a look at [Devpost](https://devpost.com/software/powerfx?ref_content=my-projects-tab&ref_feature=my_projects)
+
 
