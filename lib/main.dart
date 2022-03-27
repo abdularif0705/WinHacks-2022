@@ -126,9 +126,48 @@ class _MapScreenState extends State<MapScreen> {
   static const _initialCameraPosition =
       CameraPosition(target: LatLng(42.3027, -82.9887), zoom: 11.5);
 
+  Set<Marker> _markers = {};
+
+  //A level 2 charger allows you to charge your electric car 5 to 7 times faster for a full-electric car or up to 3 times faster for a plug-in hybrid compared to a level 1 charger
+  //
   void _onMapCreated(GoogleMapController controller) async {
     _mapController = controller;
     _mapController?.setMapStyle(_mapStyle);
+
+    setState(() {
+      _markers.add(Marker(
+          markerId: MarkerId('Comfort Inn & Suites - Windsor'),
+          position: LatLng(42.280830, -83.053890),
+          infoWindow: InfoWindow(
+              title: "Comfort Inn & Suites - Windsor",
+              snippet: "Level 2 Charger"
+          )
+      ));
+    });
+
+    //This one is defective.
+    setState(() {
+      _markers.add(Marker(
+          markerId: MarkerId('Reaume Chevrolet Buick GMC'),
+          position: LatLng(42.241720, -83.102860),
+          infoWindow: InfoWindow(
+              title: "Reaume Chevrolet Buick GMC",
+              snippet: "Defective Charger"
+          )
+      ));
+    });
+
+    //This one is defective.
+    setState(() {
+      _markers.add(Marker(
+          markerId: MarkerId('Town of Lasalle'),
+          position: LatLng(42.245400, -83.058530),
+          infoWindow: InfoWindow(
+              title: "Town of Lasalle",
+              snippet: "Level 2"
+          )
+      ));
+    });
   }
 
   @override
